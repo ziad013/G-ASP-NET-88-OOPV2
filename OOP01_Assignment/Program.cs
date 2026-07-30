@@ -59,6 +59,13 @@ namespace OOP01_Assignment
             //Genre result = (Genre)1;
             //Console.WriteLine(result);
             #endregion
+            #region Question07
+            // Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+
+            //Genre genre = Genre.Fiction;
+            //string str = genre.ToString();
+            //Console.WriteLine(str);
+            #endregion
         }
     }
 }
