@@ -40,6 +40,18 @@ namespace OOP01_Assignment
             //book.Genre = Genre.Science;
             //Console.WriteLine(book.Genre);
             #endregion
+            #region Question05
+            // Using the Genre enum above, print the underlying int value of
+            //Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.
+
+
+            //int NumFiction = (int)Genre.Fiction;
+            //int NumNonFiction = (int)Genre.NonFiction;
+            //int NumScience = (int)Genre.Science;
+            //Console.WriteLine(NumFiction);
+            //Console.WriteLine(NumNonFiction);
+            //Console.WriteLine(NumScience);
+            #endregion
         }
     }
 }
