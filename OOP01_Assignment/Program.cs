@@ -52,6 +52,13 @@ namespace OOP01_Assignment
             //Console.WriteLine(NumNonFiction);
             //Console.WriteLine(NumScience);
             #endregion
+            #region Question06
+            //Given int genreNumber = 1;, cast it into a Genre value and print the result.
+
+            //int genreNumber = 1;
+            //Genre result = (Genre)1;
+            //Console.WriteLine(result);
+            #endregion
         }
     }
 }
