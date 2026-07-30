@@ -1,4 +1,6 @@
-﻿namespace OOP01_Assignment
+﻿using System.Drawing;
+
+namespace OOP01_Assignment
 {
     internal class Program
     {
@@ -29,6 +31,14 @@
 
             //Can Access Because Title from Type public [Access from anywhere]
 
+            #endregion
+            #region Question04
+            //Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book,
+            //assign it Genre.Science, and print it.
+
+            //Book book = new Book();
+            //book.Genre = Genre.Science;
+            //Console.WriteLine(book.Genre);
             #endregion
         }
     }
