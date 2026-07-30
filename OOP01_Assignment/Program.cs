@@ -20,6 +20,16 @@
             //Console.WriteLine(book.copiesInStock);
             //Can Access Because copiesInStock from Type internal [Access through class or same project]
             #endregion
+            #region Question03
+            //Add a public string Title; field to Book. Set it and print it from Main.
+
+            //Book book = new Book();
+            //book.Title = "BlaBla";
+            //Console.WriteLine(book.Title);
+
+            //Can Access Because Title from Type public [Access from anywhere]
+
+            #endregion
         }
     }
 }
