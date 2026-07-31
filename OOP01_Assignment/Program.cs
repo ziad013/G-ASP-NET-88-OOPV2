@@ -93,6 +93,19 @@ namespace OOP01_Assignment
             //    Console.WriteLine("Unknown genre");
             //}
             #endregion
+
+
+
+            #region Question10
+            // What happens when a DeliveryAddress variable is copied into another variable and the copy is modified???
+
+            //Don’t change in original Because it create New Object (Because Struct is Value Type)
+
+            // What happens when a Customer variable is copied into another variable and one variable modifies the object??
+
+            //Change Affect in Two Variables Because Same Object (Because Class is Reference Type)
+
+            #endregion
         }
     }
 }
