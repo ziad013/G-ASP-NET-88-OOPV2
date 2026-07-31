@@ -1,5 +1,8 @@
 ﻿using Microsoft.VisualBasic;
+using System.ComponentModel.DataAnnotations;
 using System.Drawing;
+using System.Security.Principal;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace OOP01_Assignment
 {
@@ -105,6 +108,21 @@ namespace OOP01_Assignment
 
             //Change Affect in Two Variables Because Same Object (Because Class is Reference Type)
 
+            #endregion
+            #region Question11
+            // a) Identify at least three problems with this design from an encapsulation perspective.
+
+            //All fields are public, allowing direct access and modification.
+            //There is no validation for values.
+            // The struct can’t protect its internal state, which breaks encapsulation.
+
+
+            //b) How can private fields and public properties improve this design??
+
+            //Private hide the internal data from direct access.
+            //Public properties provide controlled access.
+            //Properties can validate input values.
+            //makes the code easier to maintain. 
             #endregion
         }
     }
