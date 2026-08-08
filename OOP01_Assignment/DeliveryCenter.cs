@@ -4,63 +4,65 @@ using System.Text;
 
 namespace OOP01_Assignment
 {
-    public struct DeliveryCenter
+    internal struct DeliveryCenter
     {
-        
-        private Shipment[] _shipments;
+        private Shipment[] shipments;
 
-        
         public DeliveryCenter()
         {
-            _shipments = new Shipment[10];
+            shipments = new Shipment[10];
         }
 
-        
-        public Shipment this[int index]
+        public Shipment this[int position]
         {
             get
             {
-                if (index >= 0 && index < _shipments.Length)
-                    return _shipments[index];
-
-                return default;
+                if (position >= 0 && position < shipments.Length)
+                {
+                    return shipments[position];
+                }
+                else
+                {
+                    return default;
+                }
             }
-
             set
             {
-                if (index >= 0 && index < _shipments.Length)
-                    _shipments[index] = value;
+                if (position >= 0 && position < shipments.Length)
+                {
+                    shipments[position] = value;
+                }
+
             }
         }
 
-        
-        public Shipment this[string trackingCode]
+
+        public Shipment this[string TrackingCode]
         {
             get
             {
-                foreach (Shipment shipment in _shipments)
+                for (int i = 0; i < shipments.Length; i++)
                 {
-                    if (shipment.TrackingCode == trackingCode)
-                        return shipment;
+                    if (shipments[i].TrackingCode == TrackingCode)
+                    {
+                        return shipments[i];
+                    }
                 }
-
                 return default;
             }
         }
 
-        
+
+        private int count;
         public bool AddShipment(Shipment shipment)
         {
-            for (int i = 0; i < _shipments.Length; i++)
-            {
-                if (string.IsNullOrEmpty(_shipments[i].TrackingCode))
-                {
-                    _shipments[i] = shipment;
-                    return true;
-                }
-            }
+            if (count >= shipments.Length)
+                return false;
 
-            return false;
+            shipments[count] = shipment;
+            count++;
+            return true;
+
         }
     }
 }

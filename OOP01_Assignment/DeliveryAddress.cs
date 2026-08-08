@@ -4,22 +4,27 @@ using System.Text;
 
 namespace OOP01_Assignment
 {
-    public struct DeliveryAddress
+    internal struct DeliveryAddress
     {
-        public string City;
-        public string Street;
-        public int BuildingNumber;
+        public string? city;
+        public string? street;
+        public int? buildingNumber;
 
-        public DeliveryAddress(string city, string street, int buildingNumber)
+        public DeliveryAddress(string City, String Street, int BuildingNumber)
         {
-            City = city;
-            Street = street;
-            BuildingNumber = buildingNumber;
+            city = City;
+            street = Street;
+            buildingNumber = BuildingNumber;
         }
 
-        public string GetFullAddress()
+        public void GetFullAddress()
         {
-            return $"{BuildingNumber} {Street}, {City}";
+            Console.WriteLine($"{buildingNumber} {street} , {city}");
+        }
+
+        public override string ToString()
+        {
+            return $"{buildingNumber} {street} , {city}";
         }
     }
 }
